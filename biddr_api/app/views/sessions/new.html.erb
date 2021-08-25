@@ -1,0 +1,16 @@
+<!-- app/views/sessions/new.html.erb -->
+<h1 style="text-align: center;">Sign In</h1>
+
+<%= form_tag sessions_path do %>
+<div class="signin-div">
+  <div class="signin">
+    <%= label_tag "Email*" %> <br>
+    <%= email_field_tag :email %> <br> <br>
+  
+    <%= label_tag "Password*" %> <br>
+    <%= password_field_tag :password %> <br> <br>
+ 
+    <%= submit_tag "Sign In", :class => "btn btn-secondary" %>
+  </div>
+</div>
+<% end %>

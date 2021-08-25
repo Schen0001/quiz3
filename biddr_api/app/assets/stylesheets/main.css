@@ -1,0 +1,63 @@
+.navbar-div {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px 10px 0px;
+    background-color: #F0F0F0;
+}
+
+.signin-div {
+    display: flex;
+    justify-content: center;
+}
+
+.signin {
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.signup-div {
+    display: flex;
+    justify-content: center;
+}
+
+.signup {
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.home-div {
+    padding: 30px;
+}
+
+.home-auctions-div {
+    margin-right: 65px;
+}
+
+.new-auction-div {
+    display: flex;
+    justify-content: center;
+}
+
+.body-home-div {
+    background-image: url('../images/biddr.jpg');
+}
+
+.logo {
+    margin-right: 63%;
+}
+
+.show-div {
+    padding: 50px;
+}
+
+.big-show-div {
+    display: flex;
+}
+
+.other-show-div {
+    padding: 50px;
+}

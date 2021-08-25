@@ -1,0 +1,29 @@
+<div class="big-show-div">
+  <div class="show-div">
+    <h3>
+      <%= @auction.title %>
+    </h3>
+    <p>
+      <%= @auction.description %>
+    </p>
+
+    <%= form_for :bid do |f| %>
+      <%= f.text_field :bid, :placeholder=> "Enter bid amount here...$$$" %> <br> <br>
+        <%= f.submit "Bid" , :class=> "btn btn-secondary"%>
+          <% end %>
+            <br>
+            <h5 style="text-decoration: underline;">Previous Bids</h5>
+            <% @auction.bids.each do |bid| %>
+              <%= bid.bid %>
+                <hr>
+                <% end %>
+  </div>
+
+
+
+  <div class="other-show-div">
+    <p>Current Price: </p>
+    <p>Ends at: <b><%= @auction.ends_at %></b></p>
+    <p>Reserve Price: </p>
+  </div>
+</div>

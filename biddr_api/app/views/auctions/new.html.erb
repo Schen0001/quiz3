@@ -1,0 +1,15 @@
+<h1 style="text-align: center; background-color: #F5F5DC;">CREATE AN AUCTION</h1>
+
+<div class="new-auction-div">
+<%= form_for(@new_auction) do |a| %>
+<%= a.label "Title*" %> <br>
+<%= a.text_field :title %> <br> <br>
+<%= a.label "Description*" %> <br>
+<%= a.text_area :description %> <br> <br>
+<%= a.label "Ends at*" %> <br>
+<%= a.text_field :ends_at %> <br> <br>
+<%= a.label "Reserve Price*" %> <br>
+<%= a.text_field :reserve_price%> <br> <br>
+<%= a.submit "Save", :class => "btn btn-secondary" %>
+<% end %>
+</div>

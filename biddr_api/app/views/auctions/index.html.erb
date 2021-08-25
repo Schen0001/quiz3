@@ -1,0 +1,14 @@
+<h1 style="text-align: center; background-color: #F5F5DC;">AUCTIONS</h1>
+<span style="padding: 10px;"><%= link_to "Create Auction", new_auction_path, :class => "btn btn-secondary" %></span> <br> <br>
+
+<div style="margin-left: 10px;">
+    <%= @auctions.each do |auction| %>
+        <h2>
+            <%= link_to auction.title, auction_path(auction) %>
+        </h2>
+        <h4>Posted on <%= auction.created_at %>
+        </h4>
+
+        <hr>
+        <% end %>
+</div>
